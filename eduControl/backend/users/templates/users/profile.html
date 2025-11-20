@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Your Profile</h2>
+
+<p><strong>Name:</strong> {{ user.get_full_name }}</p>
+<p><strong>Username:</strong> {{ user.username }}</p>
+<p><strong>Email:</strong> {{ user.email }}</p>
+<p><strong>Department:</strong> {{ profile.department }}</p>
+<p><strong>Roll Number:</strong> {{ profile.roll_number }}</p>
+<p><strong>Phone:</strong> {{ profile.phone }}</p>
+<p><strong>Admission Date:</strong> {{ profile.admission_date }}</p>
+
+<h3>Update Info</h3>
+<form method="POST">
+  {% csrf_token %}
+  <label>Phone:</label>
+  <input type="text" name="phone" value="{{ profile.phone }}">
+  <label>Department:</label>
+  <input type="text" name="department" value="{{ profile.department }}">
+  <button type="submit">Save Changes</button>
+</form>
+{% endblock %}

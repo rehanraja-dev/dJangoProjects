@@ -1,0 +1,64 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f8fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.navbar {
+    background-color: #283e4a;
+    color: white;
+    padding: 10px 0;
+}
+
+.navbar .logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    float: right;
+    margin-top: -30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.messages ul {
+    list-style: none;
+    padding: 10px;
+}
+
+.msg {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.msg.success { background-color: #c8e6c9; color: #2e7d32; }
+.msg.error { background-color: #ffcdd2; color: #b71c1c; }
+.msg.info { background-color: #bbdefb; color: #0d47a1; }
+
+footer {
+    text-align: center;
+    padding: 10px;
+    color: #555;
+    margin-top: 30px;
+}
